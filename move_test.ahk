@@ -1,6 +1,9 @@
 #Requires AutoHotKey v2.0
 #SingleInstance
 
-WinMove(-1928, 202,,, "ahk_exe Discord.exe")
-WinMaximize("ahk_exe Discord.exe")
+win := "ahk_exe Discord.exe"
+
+WinRestore(win)
+WinMove(-1928, 202,,, win)
+WinMaximize(win)
 return
